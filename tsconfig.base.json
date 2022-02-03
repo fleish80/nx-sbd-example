@@ -13,8 +13,12 @@
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "strictPropertyInitialization": false,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@stanley/data": ["libs/data/src/index.ts"],
+      "@stanley/infra": ["libs/infra/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

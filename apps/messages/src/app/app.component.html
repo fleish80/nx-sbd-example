@@ -1,1 +1,11 @@
-<stanley-nx-welcome></stanley-nx-welcome>
+{{message}}
+
+<stanley-infra></stanley-infra>
+
+<ul>
+  <li *ngFor="let message of message$ | async">
+    {{message.message}}
+  </li>
+</ul>
+
+<button type="button" (click)="updateMessage()">update message</button>

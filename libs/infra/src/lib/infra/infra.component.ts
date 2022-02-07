@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {data} from '@stanley/data';
 
 @Component({
   selector: 'stanley-infra',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfraComponent implements OnInit {
 
-  constructor() { }
+  message: data;
 
   ngOnInit(): void {
+    this.message = {message: 'Message from library'};
   }
 
 }

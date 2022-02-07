@@ -1,5 +1,12 @@
-{{message}}
+{{message.message}}
 
 <stanley-infra></stanley-infra>
 
-{{(message$ | async)?.message}}
+
+<ul>
+  <li *ngFor="let message of message$ | async">
+    {{message.message}}
+  </li>
+</ul>
+
+<button (click)="updateMessage()">Update message</button>

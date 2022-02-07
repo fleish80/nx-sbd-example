@@ -16,6 +16,7 @@
     "strictPropertyInitialization": false,
     "baseUrl": ".",
     "paths": {
+      "@stanley/data": ["libs/data/src/index.ts"],
       "@stanley/infra": ["libs/infra/src/index.ts"]
     }
   },
